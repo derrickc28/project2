@@ -1,6 +1,8 @@
 import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Locale;
+
 public class WordleList
 {
     private ArrayList<String> wordList;
@@ -38,7 +40,7 @@ public class WordleList
     public String getWord()
     {
         int random = (int) (Math.random() * wordList.size());
-        return wordList.get(random);
+        return wordList.get(random).toLowerCase();
     }
 
 }
